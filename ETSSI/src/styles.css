@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0% !important;
+}
+
+@font-face {
+    font-family: codelight;
+    src: url('/assets/fonts/CODE_Light.otf');
+}
+
+@font-face {
+    font-family: keepcalm;
+    src: url('/assets/fonts/KeepCalm-Medium.ttf');
+}
+
+@font-face {
+    font-family: headingextrabold;
+    src: url('/assets/fonts/Heading-Extrabold.ttf');
+}
