@@ -1,0 +1,121 @@
+.row {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    .left_section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        .panel-heading {
+            .panel-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                color: #0F056B;
+                font-size: 2em;
+                padding: 2% 0;
+            }
+        }
+        .panel-body {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .form {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 2%;
+                .input {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 70%;
+                    padding: 2% 0;
+                    input {
+                        width: 96%;
+                        border: solid 1px;
+                        padding: 2%;
+                        font-size: 1.2em;
+                        background-color: #f1f2f5;
+                        color: grey;
+                    }
+                    .inscription {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        .askInscription {
+                            display: flex;
+                        }
+                        .checkbox {
+                            display: flex;
+                            input {
+                                padding: 1vh 1vh;
+                            }
+                        }
+                    }
+                    input::placeholder {
+                        /* WebKit, Blink, Edge */
+                        color: #a5adc1;
+                        font-size: 14px;
+                    }
+                    textarea {
+                        width: 96%;
+                        height: 25vh;
+                        background-color: #f1f2f5;
+                        border: none;
+                        color: grey;
+                        font-size: 14px;
+                        padding: 2%;
+                        border: solid 1px;
+                    }
+                    textarea::placeholder {
+                        /* WebKit, Blink, Edge */
+                        color: #a5adc1;
+                        font-size: 1.2em;
+                    }
+                    button {
+                        background-color: darkblue;
+                        border: none;
+                        color: white;
+                        padding: 10px 12px;
+                        font-weight: bold;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                }
+                .alert-danger {
+                    color: red;
+                    padding: 1%;
+                }
+            }
+        }
+    }
+    .right_section {
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        align-content: center;
+        .map {
+            justify-content: center;
+            align-items: center;
+            height: 95%;
+            width: 100%;
+            margin-right: 10%;
+            iframe {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
