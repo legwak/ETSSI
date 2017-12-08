@@ -18,3 +18,8 @@ body {
     font-family: headingextrabold;
     src: url('/assets/fonts/Heading-Extrabold.ttf');
 }
+
+@font-face {
+    font-family: fjalla;
+    src: url('/assets/fonts/FjallaOne-Regular.ttf');
+}

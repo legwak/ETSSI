@@ -1,5 +1,5 @@
 .navbar {
-    margin-top: 20px;
+    margin-top: 60px;
     z-index: 1;
     color: white;
     width: 100%;
@@ -19,7 +19,8 @@
 
 .title {
     z-index: 1;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 250px;
     color: white;
     position: absolute;
     display: flex;
@@ -37,16 +38,249 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(8, 17, 34, 0) 0%), url('../../assets/images/conf3.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0) 0%), url('../../assets/images/conf4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 40px;
-    filter: blur(5px);
 }
 
 .content {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: white;
+    justify-content: center;
+    background-color: #e4e5ea;
+    .box {
+        margin-top: -150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .iot {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 470px;
+            height: 900px;
+            background-color: #fffafa;
+            box-shadow: 0 0 30px #888;
+            .picture {
+                margin-top: 10px;
+                width: 100%;
+                height: 420px;
+                background-image: url('../../assets/images/iot2.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .titleBox {
+                margin-top: 40px;
+                font-family: headingextrabold;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                color: #d9a951;
+            }
+            .text {
+                padding: 4% 10% 2% 10%;
+                width: 80%;
+                height: 160px;
+                text-align: justify;
+                font-family: keepcalm;
+                line-height: 1.3em;
+                color: #333;
+            }
+            .peopleTitle {
+                margin-top: 30px;
+                font-size: 1.7em;
+                text-transform: uppercase;
+                font-family: headingextrabold;
+                color: #a4a5aa;
+                letter-spacing: 2px;
+            }
+            .groupname {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                margin-top: 20px;
+                .name {
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    margin-top: 20px;
+                    .lastname {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        font-family: keepcalm;
+                    }
+                    .surname {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        font-family: keepcalm;
+                        color: #d9a951;
+                    }
+                }
+            }
+            .border {
+                margin-top: 32px;
+                width: 100%;
+                height: 15px;
+                background-color: #d9a951;
+            }
+        }
+        .ffe {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            left: 500px;
+            width: 470px;
+            height: 900px;
+            background-color: #fffafa;
+            box-shadow: 0 0 30px #888;
+            .picture {
+                margin-top: 10px;
+                width: 100%;
+                height: 420px;
+                background-image: url('../../assets/images/ff4.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .titleBox {
+                margin-top: 40px;
+                font-family: headingextrabold;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                color: #5ed347;
+            }
+            .text {
+                padding: 4% 10% 2% 10%;
+                width: 80%;
+                height: 160px;
+                text-align: justify;
+                font-family: keepcalm;
+                line-height: 1.3em;
+                color: #333;
+            }
+            .peopleTitle {
+                margin-top: 30px;
+                font-size: 1.7em;
+                text-transform: uppercase;
+                font-family: headingextrabold;
+                color: #a4a5aa;
+                letter-spacing: 2px;
+            }
+            .groupname {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                margin-top: 20px;
+                .name {
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    margin-top: 20px;
+                    .lastname {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        font-family: keepcalm;
+                    }
+                    .surname {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        font-family: keepcalm;
+                        color: #5ed347;
+                    }
+                }
+            }
+            .border {
+                margin-top: 32px;
+                width: 100%;
+                height: 15px;
+                background-color: #5ed347;
+            }
+        }
+        .ia {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: -70px;
+            left: -470px;
+            width: 500px;
+            height: 1040px;
+            background-color: #ffffff;
+            box-shadow: 0 0 30px #888;
+            .picture {
+                margin-top: 10px;
+                width: 100%;
+                height: 550px;
+                background-image: url('../../assets/images/ia2.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .titleBox {
+                margin-top: 40px;
+                font-family: headingextrabold;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                color: #5caec6;
+            }
+            .text {
+                padding: 4% 10% 2% 10%;
+                width: 80%;
+                height: 160px;
+                text-align: justify;
+                font-family: keepcalm;
+                line-height: 1.3em;
+                color: #333;
+            }
+            .peopleTitle {
+                margin-top: 30px;
+                font-size: 1.7em;
+                text-transform: uppercase;
+                font-family: headingextrabold;
+                color: #a4a5aa;
+                letter-spacing: 2px;
+            }
+            .groupname {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                margin-top: 20px;
+                .name {
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    margin-top: 20px;
+                    .lastname {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        font-family: keepcalm;
+                    }
+                    .surname {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        font-family: keepcalm;
+                        color: #5caec6;
+                    }
+                }
+            }
+            .border {
+                margin-top: 32px;
+                width: 100%;
+                height: 15px;
+                background-color: #5caec6;
+            }
+        }
+    }
 }
