@@ -1,15 +1,17 @@
 .row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     background-color: white;
     font-family: keepcalm;
     .left_section {
         width: 50%;
+        min-width: 485px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2%;
         .panel-heading {
             .panel-title {
                 display: flex;
@@ -106,21 +108,44 @@
     }
     .right_section {
         display: flex;
-        height: 70vh;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 50%;
         align-content: center;
+        .panel-heading {
+            .panel-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                color: #0F056B;
+                font-size: 2em;
+                padding: 2% 0;
+            }
+        }
         .map {
+            display: flex;
             justify-content: center;
             align-items: center;
-            height: 95%;
+            height: 80vh;
             width: 100%;
-            margin-right: 10%;
             iframe {
+                display: flex;
                 height: 100%;
-                width: 100%;
+                width: 90%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .row {
+        .left_section {
+            width: 100%;
+        }
+        .right_section {
+            width: 100%
         }
     }
 }

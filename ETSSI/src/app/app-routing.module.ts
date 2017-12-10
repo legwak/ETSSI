@@ -8,7 +8,7 @@ import { DescriptionComponent } from './description/description.component';
 const routes: Routes = [
     {
       path: '',
-      component: DescriptionComponent
+      component: HomeComponent
     },
 ];
 
