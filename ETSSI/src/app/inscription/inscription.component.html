@@ -7,29 +7,33 @@
             <form [formGroup]="inscriptionForm" class="form">
                 <div class="input">
                     <input formControlName="lastname" type="text" name="lastname" placeholder="Nom" [(ngModel)]="message.lastname">
+                    <div *ngIf="inscriptionForm.controls['lastname'].hasError('required') && inscriptionForm.controls['lastname'].touched" class="alert alert-danger">Votre nom est requis</div>
                 </div>
                 <div class="input">
                     <input formControlName="firstname" type="text" name="firstname" placeholder="Prénom" [(ngModel)]="message.firstname">
+                    <div *ngIf="inscriptionForm.controls['firstname'].hasError('required') && inscriptionForm.controls['firstname'].touched" class="alert alert-danger">Votre prénom est requis</div>
                 </div>
                 <div class="input">
                     <input formControlName="entreprise" type="text" name="entreprise" placeholder="Votre société" [(ngModel)]="message.entreprise">
                 </div>
                 <div class="input">
                     <input formControlName="email" type="text" name="email" placeholder="Email" [(ngModel)]="message.email">
+                    <div *ngIf="inscriptionForm.controls['email'].hasError('required') && inscriptionForm.controls['email'].touched" class="alert alert-danger">Une adresse email est requise</div>
+                    <div *ngIf="inscriptionForm.controls['email'].hasError('invalidEmail') && inscriptionForm.controls['email'].touched" class="alert alert-danger">Adresse email invalide</div>
                 </div>
-                <div class="input">
-                    <div class="inscription">
-                        <label class="askInscription" for="inscription">Je m'inscris :</label>
-                        <div class="checkbox">
-                            <input type="radio" formControlName="inscriptionValid" name="oui/non" value="oui" [(ngModel)]="message.inscriptionOui" />Oui
-                        </div>
-                        <div class="checkbox">
-                            <input type="radio" formControlName="inscriptionnonDecline" name="oui/non" value="non" [(ngModel)]="message.inscriptionNon" />Non
-                        </div>
+                <div class="inscription">
+                    <label class="askInscription" for="inscription">Je m'inscris :</label>
+                    <div class="checkbox">
+                        <input type="radio" formControlName="inscriptionValid" name="inscriptionValid" value="oui" [(ngModel)]="message.inscriptionOui" />Oui
+                    </div>
+                    <div class="checkbox">
+                        <input type="radio" formControlName="inscriptionValid" name="inscriptionValid" value="non" [(ngModel)]="message.inscriptionNon" />Non
                     </div>
                 </div>
                 <div class="input">
                     <textarea formControlName="message" rows="6" name="message" placeholder="Message" [(ngModel)]="message.message"></textarea>
+                    <div *ngIf="inscriptionForm.controls['message'].hasError('required') && inscriptionForm.controls['message'].touched" class="alert alert-danger">Un message est requis</div>
+                    <div *ngIf="inscriptionForm.controls['message'].hasError('minlength') && inscriptionForm.controls['message'].touched" class="alert alert-danger">Votre message doit contenir au moins 40 caractères</div>
                 </div>
                 <div class="input">
                     <button [disabled]="!inscriptionForm.valid" type="submit">Send Email</button></div>

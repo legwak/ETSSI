@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     background-color: white;
+    font-family: keepcalm;
     .left_section {
         width: 50%;
         display: flex;
@@ -48,20 +49,6 @@
                         background-color: #f1f2f5;
                         color: grey;
                     }
-                    .inscription {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        .askInscription {
-                            display: flex;
-                        }
-                        .checkbox {
-                            display: flex;
-                            input {
-                                padding: 1vh 1vh;
-                            }
-                        }
-                    }
                     input::placeholder {
                         /* WebKit, Blink, Edge */
                         color: #a5adc1;
@@ -70,6 +57,8 @@
                     textarea {
                         width: 96%;
                         height: 25vh;
+                        max-width: 96%;
+                        max-height: 30vh;
                         background-color: #f1f2f5;
                         border: none;
                         color: grey;
@@ -93,7 +82,23 @@
                     }
                 }
                 .alert-danger {
-                    color: red;
+                    color: #bf1b2c;
+                    padding: 1%;
+                }
+                .inscription {
+                    display: flex;
+                    width: 70%;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .askInscription {
+                        display: flex;
+                    }
+                    .checkbox {
+                        display: flex;
+                    }
+                }
+                .alert-danger {
+                    color: #bf1b2c;
                     padding: 1%;
                 }
             }

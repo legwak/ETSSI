@@ -25,8 +25,14 @@ export class InscriptionComponent  {
           Validators.required
         ])
       ],
-      inscription: [null, ''],
-      entreprise: [null, ''],
+      inscriptionValid: [null, Validators.compose([
+        Validators.required
+      ])
+    ],
+      entreprise: [null, Validators.compose([
+        Validators.required
+      ])
+    ],
       email: [null, Validators.compose([
           Validators.required,
           emailValidator
@@ -44,6 +50,7 @@ export class InscriptionComponent  {
      this.inscriptionService.sendEmail(message).subscribe(res => {
        console.log('AppComponent Success', res);
      }, error => {
+       console.log(message)
        console.log('AppComponent Error', error);
      })
    }

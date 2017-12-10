@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { InscriptionService } from './services/inscription.service';
+import { DescriptionComponent } from './description/description.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
