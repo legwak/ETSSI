@@ -18,7 +18,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                color: #0F056B;
+                color: #333;
                 font-size: 2em;
                 padding: 2% 0;
             }
@@ -50,6 +50,7 @@
                         font-size: 1.2em;
                         background-color: #f1f2f5;
                         color: grey;
+                        font-family: keepcalm;
                     }
                     input::placeholder {
                         /* WebKit, Blink, Edge */
@@ -67,6 +68,7 @@
                         font-size: 14px;
                         padding: 2%;
                         border: solid 1px;
+                        font-family: keepcalm;
                     }
                     textarea::placeholder {
                         /* WebKit, Blink, Edge */
@@ -74,7 +76,7 @@
                         font-size: 1.2em;
                     }
                     button {
-                        background-color: darkblue;
+                        background-color: #333;
                         border: none;
                         color: white;
                         padding: 10px 12px;
@@ -119,7 +121,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                color: #0F056B;
+                color: #333;
                 font-size: 2em;
                 padding: 2% 0;
             }

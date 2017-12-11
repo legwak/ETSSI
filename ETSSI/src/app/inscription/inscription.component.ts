@@ -11,6 +11,8 @@ import { FormGroup, FormBuilder, Validators, ReactiveFormsModule, FormsModule  }
 export class InscriptionComponent  {
   inscriptionForm: FormGroup;
   message: IMessage = {};
+  sent: boolean;
+  error: boolean;
 
   constructor(public inscriptionService: InscriptionService, private fb : FormBuilder) {
  
@@ -49,7 +51,11 @@ export class InscriptionComponent  {
    sendEmail(message: IMessage) {
      this.inscriptionService.sendEmail(message).subscribe(res => {
        console.log('AppComponent Success', res);
+       this.sent = true;
+       this.error = false;
+
      }, error => {
+      this.sent = false;
        console.log(message)
        console.log('AppComponent Error', error);
      })

@@ -36,7 +36,13 @@
                     <div *ngIf="inscriptionForm.controls['message'].hasError('minlength') && inscriptionForm.controls['message'].touched" class="alert alert-danger">Votre message doit contenir au moins 40 caractères</div>
                 </div>
                 <div class="input">
-                    <button [disabled]="!inscriptionForm.valid" type="submit">Send Email</button></div>
+                    <button [disabled]="!inscriptionForm.valid" type="submit">Envoyer</button></div>
+                <div *ngIf="sent" class="input">
+                    <div class="alert alert-danger">Votre message a été envoyé</div>
+                </div>
+                <div *ngIf="error" class="input">
+                    <div class="alert alert-danger">Un problème est survenu, veuillez réessayer.</div>
+                </div>
             </form>
         </div>
     </div>
