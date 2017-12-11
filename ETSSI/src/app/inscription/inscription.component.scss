@@ -1,14 +1,17 @@
 .row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     background-color: white;
+    font-family: keepcalm;
     .left_section {
         width: 50%;
+        min-width: 485px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2%;
         .panel-heading {
             .panel-title {
                 display: flex;
@@ -48,20 +51,6 @@
                         background-color: #f1f2f5;
                         color: grey;
                     }
-                    .inscription {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        .askInscription {
-                            display: flex;
-                        }
-                        .checkbox {
-                            display: flex;
-                            input {
-                                padding: 1vh 1vh;
-                            }
-                        }
-                    }
                     input::placeholder {
                         /* WebKit, Blink, Edge */
                         color: #a5adc1;
@@ -70,6 +59,8 @@
                     textarea {
                         width: 96%;
                         height: 25vh;
+                        max-width: 96%;
+                        max-height: 30vh;
                         background-color: #f1f2f5;
                         border: none;
                         color: grey;
@@ -93,7 +84,23 @@
                     }
                 }
                 .alert-danger {
-                    color: red;
+                    color: #bf1b2c;
+                    padding: 1%;
+                }
+                .inscription {
+                    display: flex;
+                    width: 70%;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .askInscription {
+                        display: flex;
+                    }
+                    .checkbox {
+                        display: flex;
+                    }
+                }
+                .alert-danger {
+                    color: #bf1b2c;
                     padding: 1%;
                 }
             }
@@ -101,21 +108,44 @@
     }
     .right_section {
         display: flex;
-        height: 70vh;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 50%;
         align-content: center;
+        .panel-heading {
+            .panel-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                color: #0F056B;
+                font-size: 2em;
+                padding: 2% 0;
+            }
+        }
         .map {
+            display: flex;
             justify-content: center;
             align-items: center;
-            height: 95%;
+            height: 80vh;
             width: 100%;
-            margin-right: 10%;
             iframe {
+                display: flex;
                 height: 100%;
-                width: 100%;
+                width: 90%;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .row {
+        .left_section {
+            width: 100%;
+        }
+        .right_section {
+            width: 100%
         }
     }
 }

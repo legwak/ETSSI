@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { InscriptionComponent } from './inscription/inscription.component';
+import { DescriptionComponent } from './description/description.component';
 
 const routes: Routes = [
     {
