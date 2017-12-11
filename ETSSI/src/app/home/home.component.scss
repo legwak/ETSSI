@@ -42,26 +42,25 @@
 .header {
     z-index: 99;
     width: 100%;
-    height: 100vh;
+    height: 1000px;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-image: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0) 0%), url('../../assets/images/conf4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 1500px;
 }
 
 .content {
     width: 100%;
-    height: 100vh;
+    height: 1000px;
     display: flex;
     justify-content: center;
     background-color: #e4e5ea;
-    min-width: 1500px;
     .box {
         margin-top: -150px;
         width: 100%;
+        min-width: 1674px;
         display: flex;
         justify-content: center;
         .iot {
@@ -69,73 +68,95 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            width: 470px;
+            width: 25%;
+            min-width: 418px;
             height: 900px;
             background-color: #fffafa;
             box-shadow: 0 0 30px #888;
-            .picture {
-                margin-top: 10px;
+            .top {
                 width: 100%;
-                height: 420px;
-                background-image: url('../../assets/images/iot2.jpg');
+                height: 1%;
+            }
+            .picture {
+                width: 100%;
+                height: 49%;
+                background-image: url('../../assets/images/ia2.jpg');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             .titleBox {
-                margin-top: 40px;
-                font-family: headingextrabold;
-                font-size: 2.5em;
-                text-transform: uppercase;
-                color: #d9a951;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                width: 100%;
+                height: 10%;
+                span {
+                    font-family: headingextrabold;
+                    font-size: 2.5em;
+                    text-transform: uppercase;
+                    color: #d9a951;
+                }
             }
             .text {
-                padding: 4% 10% 2% 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10% 0 10%;
                 width: 80%;
-                height: 160px;
-                text-align: justify;
-                font-family: keepcalm;
-                line-height: 1.3em;
-                color: #333;
+                height: 30%;
+                span {
+                    text-align: justify;
+                    font-family: keepcalm;
+                    line-height: 1.3em;
+                    color: #333;
+                }
             }
             .peopleTitle {
-                margin-top: 30px;
-                font-size: 1.7em;
-                text-transform: uppercase;
-                font-family: headingextrabold;
-                color: #a4a5aa;
-                letter-spacing: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 8%;
+                width: 100%;
+                span {
+                    font-size: 1.7em;
+                    text-transform: uppercase;
+                    font-family: headingextrabold;
+                    color: #a4a5aa;
+                    letter-spacing: 2px;
+                }
             }
             .groupname {
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
                 width: 100%;
-                margin-top: 20px;
+                height: 12%;
                 .name {
                     display: flex;
                     flex-direction: column;
                     width: 30%;
-                    margin-top: 20px;
+                    height: 70%;
                     .lastname {
                         display: flex;
                         justify-content: center;
                         width: 100%;
+                        height: 50%;
                         font-family: keepcalm;
                     }
                     .surname {
-                        margin-top: 10px;
                         display: flex;
                         justify-content: center;
                         width: 100%;
+                        height: 50%;
                         font-family: keepcalm;
                         color: #d9a951;
                     }
                 }
             }
             .border {
-                margin-top: 32px;
                 width: 100%;
-                height: 15px;
+                height: 1%;
                 background-color: #d9a951;
             }
         }
@@ -144,75 +165,97 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            left: 500px;
-            width: 470px;
+            left: 28%;
+            width: 25%;
+            min-width: 418px;
             height: 900px;
             background-color: #fffafa;
             box-shadow: 0 0 30px #888;
-            .picture {
-                margin-top: 10px;
+            .top {
                 width: 100%;
-                height: 420px;
+                height: 1%;
+            }
+            .picture {
+                width: 100%;
+                height: 49%;
                 background-image: url('../../assets/images/ff4.png');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             .titleBox {
-                margin-top: 40px;
-                font-family: headingextrabold;
-                font-size: 2.5em;
-                text-transform: uppercase;
-                color: #5ed347;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                width: 100%;
+                height: 10%;
+                span {
+                    font-family: headingextrabold;
+                    font-size: 2.5em;
+                    text-transform: uppercase;
+                    color: #76df61;
+                }
             }
             .text {
-                padding: 4% 10% 2% 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10% 0 10%;
                 width: 80%;
-                height: 160px;
-                text-align: justify;
-                font-family: keepcalm;
-                line-height: 1.3em;
-                color: #333;
+                height: 30%;
+                span {
+                    text-align: justify;
+                    font-family: keepcalm;
+                    line-height: 1.3em;
+                    color: #333;
+                }
             }
             .peopleTitle {
-                margin-top: 30px;
-                font-size: 1.7em;
-                text-transform: uppercase;
-                font-family: headingextrabold;
-                color: #a4a5aa;
-                letter-spacing: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 8%;
+                width: 100%;
+                span {
+                    font-size: 1.7em;
+                    text-transform: uppercase;
+                    font-family: headingextrabold;
+                    color: #a4a5aa;
+                    letter-spacing: 2px;
+                }
             }
             .groupname {
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
                 width: 100%;
-                margin-top: 20px;
+                height: 12%;
                 .name {
                     display: flex;
                     flex-direction: column;
                     width: 30%;
-                    margin-top: 20px;
+                    height: 70%;
                     .lastname {
                         display: flex;
                         justify-content: center;
                         width: 100%;
+                        height: 50%;
                         font-family: keepcalm;
                     }
                     .surname {
-                        margin-top: 10px;
                         display: flex;
                         justify-content: center;
                         width: 100%;
+                        height: 50%;
                         font-family: keepcalm;
-                        color: #5ed347;
+                        color: #76df61;
                     }
                 }
             }
             .border {
-                margin-top: 32px;
                 width: 100%;
-                height: 15px;
-                background-color: #5ed347;
+                height: 1%;
+                background-color: #76df61;
             }
         }
         .ia {
@@ -220,75 +263,97 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-top: -70px;
-            left: -470px;
-            width: 500px;
-            height: 1040px;
-            background-color: #ffffff;
+            left: -25%;
+            width: 28%;
+            min-width: 418px;
+            height: 1000px;
+            background-color: #fffafa;
             box-shadow: 0 0 30px #888;
-            .picture {
-                margin-top: 10px;
+            top: -50px;
+            .top {
                 width: 100%;
-                height: 550px;
-                background-image: url('../../assets/images/ia2.jpg');
+                height: 1%;
+            }
+            .picture {
+                width: 100%;
+                height: 54%;
+                background-image: url('../../assets/images/iot2.jpg');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
             }
             .titleBox {
-                margin-top: 40px;
-                font-family: headingextrabold;
-                font-size: 2.5em;
-                text-transform: uppercase;
-                color: #5caec6;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                width: 100%;
+                height: 10%;
+                span {
+                    font-family: headingextrabold;
+                    font-size: 2.5em;
+                    text-transform: uppercase;
+                    color: #5caec6;
+                }
             }
             .text {
-                padding: 4% 10% 2% 10%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 10% 0 10%;
                 width: 80%;
-                height: 160px;
-                text-align: justify;
-                font-family: keepcalm;
-                line-height: 1.3em;
-                color: #333;
+                height: 25%;
+                span {
+                    text-align: justify;
+                    font-family: keepcalm;
+                    line-height: 1.3em;
+                    color: #333;
+                }
             }
             .peopleTitle {
-                margin-top: 30px;
-                font-size: 1.7em;
-                text-transform: uppercase;
-                font-family: headingextrabold;
-                color: #a4a5aa;
-                letter-spacing: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 8%;
+                width: 100%;
+                span {
+                    font-size: 1.7em;
+                    text-transform: uppercase;
+                    font-family: headingextrabold;
+                    color: #a4a5aa;
+                    letter-spacing: 2px;
+                }
             }
             .groupname {
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
                 width: 100%;
-                margin-top: 20px;
+                height: 12%;
                 .name {
                     display: flex;
                     flex-direction: column;
                     width: 30%;
-                    margin-top: 20px;
+                    height: 70%;
                     .lastname {
                         display: flex;
                         justify-content: center;
                         width: 100%;
+                        height: 50%;
                         font-family: keepcalm;
                     }
                     .surname {
-                        margin-top: 10px;
                         display: flex;
                         justify-content: center;
                         width: 100%;
+                        height: 50%;
                         font-family: keepcalm;
                         color: #5caec6;
                     }
                 }
             }
             .border {
-                margin-top: 32px;
                 width: 100%;
-                height: 15px;
+                height: 1%;
                 background-color: #5caec6;
             }
         }
