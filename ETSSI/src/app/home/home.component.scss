@@ -26,9 +26,15 @@
     color: white;
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     span {
         font-size: 10em;
+        font-family: keepcalm;
+    }
+    .subtitle {
+        font-size: 5em !important;
         font-family: keepcalm;
     }
 }
@@ -43,6 +49,7 @@
     background-image: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0) 0%), url('../../assets/images/conf4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 1500px;
 }
 
 .content {
@@ -51,6 +58,7 @@
     display: flex;
     justify-content: center;
     background-color: #e4e5ea;
+    min-width: 1500px;
     .box {
         margin-top: -150px;
         width: 100%;
