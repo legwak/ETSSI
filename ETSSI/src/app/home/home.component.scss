@@ -3,6 +3,7 @@
     z-index: 1;
     color: white;
     width: 100%;
+    min-width: 1345px;
     display: flex;
     position: absolute;
     flex-direction: row;
@@ -32,6 +33,7 @@
 .title {
     z-index: 1;
     width: 100%;
+    min-width: 1345px;
     margin-top: 250px;
     color: white;
     position: absolute;
@@ -53,6 +55,7 @@
 .header {
     z-index: 99;
     width: 100%;
+    min-width: 1345px;
     height: 1000px;
     display: flex;
     align-items: center;
@@ -64,6 +67,7 @@
 
 .content {
     width: 100%;
+    min-width: 1345px;
     display: flex;
     justify-content: center;
     background-color: #e4e5ea;
